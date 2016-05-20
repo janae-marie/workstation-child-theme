@@ -24,6 +24,7 @@ add_action( 'wp_enqueue_scripts', 'workstation_enqueue_scripts_styles' );
 function workstation_enqueue_scripts_styles() {
 
 	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Roboto+Condensed:300italic,700italic,700,300', array(), CHILD_THEME_VERSION );
+    wp_enqueue_style( 'noto-google-fonts', '//fonts.googleapis.com/css?family=Noto+Serif');
 	wp_enqueue_style( 'dashicons' );
 
 	wp_enqueue_script( 'workstation-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true );
